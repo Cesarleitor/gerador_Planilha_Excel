@@ -1,0 +1,19 @@
+# Ambiente virtual
+.venv/
+
+# Build do executável
+dist/
+build/
+*.spec
+
+# Cache do Python
+_pycache_/
+*.pyc
+*.pyo
+*.pyd
+
+# PyCharm
+.idea/
+
+# Arquivos exportados
+exports/*.xlsx
