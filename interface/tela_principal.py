@@ -1,9 +1,12 @@
 
 import json
+
+
 import customtkinter as ctk
 from tkinter import messagebox
-from openpyxl import Workbook
 import os
+
+
 from services.planilha_service import exportar_planilha as gerar_arquivo_excel
 
 ctk.set_appearance_mode("dark")
@@ -12,12 +15,16 @@ ctk.set_default_color_theme("blue")
 itens = []
 total_geral = 0.0
 
+def iniciar_sistema():
+    janela = ctk.CTk()
+    janela.title("Gerador de Planilha")
+
 
 def formatar_moeda(valor):
     return f"R$ {valor:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
 
 
-def calcular_total_item(*args):
+def calcular_total_item(event=None):
     try:
         quantidade = int(entrada_quantidade.get())
         valor_unitario = float(entrada_valor_unitario.get().replace(",", "."))
@@ -142,6 +149,31 @@ entrada_total_item.configure(state="disabled")
 entrada_quantidade.bind("<KeyRelease>", calcular_total_item)
 entrada_valor_unitario.bind("<KeyRelease>", calcular_total_item)
 
+
+def novo_pedido():
+    global itens, total_geral
+
+    # limpa campos do topo
+    entrada_pedido.delete(0, "end")
+    entrada_cliente.delete(0, "end")
+
+    # limpa campos do item
+    limpar_campos_item()
+
+    # zera dados
+    itens.clear()
+    total_geral = 0.0
+    label_total_geral.configure(text="Total geral: R$ 0,00")
+
+    # remove itens exibidos da lista, mantendo o cabeçalho
+    for widget in frame_lista.winfo_children():
+        info = widget.grid_info()
+        if int(info["row"]) > 0:
+            widget.destroy()
+
+    # foca no número do pedido
+    entrada_pedido.focus()
+
 # Botão adicionar
 botao_adicionar = ctk.CTkButton(
     janela,
@@ -229,6 +261,7 @@ def exportar_planilha_interface():
 frame_botoes = ctk.CTkFrame(frame_rodape, fg_color="transparent")
 frame_botoes.pack(fill="x", padx=20, pady=20)
 
+
 botao_salvar = ctk.CTkButton(
     frame_botoes,
     text="Salvar",
@@ -246,6 +279,15 @@ botao_exportar = ctk.CTkButton(
     command=exportar_planilha_interface
 )
 botao_exportar.pack(side="left", padx=5)
+
+botao_novo_pedido = ctk.CTkButton(
+    frame_botoes,
+    text="Novo Pedido",
+    width=120,
+    height=40,
+    command=novo_pedido
+)
+botao_novo_pedido.pack(side="left", padx=5)
 
 
 janela.mainloop()
