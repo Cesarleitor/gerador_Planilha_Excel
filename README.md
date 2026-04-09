@@ -59,6 +59,12 @@ Adicione aqui prints da aplicação ou GIF mostrando o funcionamento.
 
 ![Demonstração do sistema](docs/gif_projeto.gif)
 
+## 🎥 Demonstração
+
+<p align="center">
+  <img src="docs/gif_projeto.gif" width="700">
+</p>
+
 
 
 ## ▶️ Como Executar o Projeto
