@@ -9,7 +9,7 @@ def formatar_moeda(valor):
 
 def exportar_planilha(numero_pedido, nome_cliente, itens):
     pasta_downloads = Path.home() / "Downloads"
-    nome_arquivo = pasta_downloads / f"pedido_{numero_pedido}.pdf"
+    nome_arquivo = pasta_downloads / f"{nome_cliente}.pdf"
 
     pdf = canvas.Canvas(str(nome_arquivo), pagesize=A4)
     largura, altura = A4
@@ -23,7 +23,7 @@ def exportar_planilha(numero_pedido, nome_cliente, itens):
     pdf.setFont("Helvetica", 12)
     pdf.drawString(50, y, f"Número do pedido: {numero_pedido}")
     y -= 20
-    pdf.drawString(50, y, f"Nome do cliente: {nome_cliente}")
+    pdf.drawString(50, y, f"Cliente: {nome_cliente}")
     y -= 30
 
     pdf.setFont("Helvetica-Bold", 10)

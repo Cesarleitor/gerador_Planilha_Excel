@@ -17,7 +17,7 @@ total_geral = 0.0
 
 def iniciar_sistema():
     janela = ctk.CTk()
-    janela.title("Gerador de Planilha")
+    janela.title("Arte Sul")
 
 
 def formatar_moeda(valor):
@@ -96,12 +96,12 @@ def limpar_campos_item():
 
 
 janela = ctk.CTk()
-janela.title("Gerador de Planilha")
+janela.title("Arte Sul")
 janela.geometry("1100x700")
 
 titulo = ctk.CTkLabel(
     janela,
-    text="Gerador de Planilha",
+    text="Arte Sul Esculturas Decorativas",
     font=("Arial", 24, "bold")
 )
 titulo.pack(pady=20)
