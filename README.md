@@ -40,6 +40,9 @@ Adicione aqui prints da aplicação ou GIF mostrando o funcionamento.
 ### 🖥️ Tela Principal
 ![Tela Principal](docs/tela_principal.png)
 
+### ⚙️ Serviço de Planilha
+![Planilha Service](docs/planilha_service.png)
+
 ### 🧾 Interface do Sistema
 ![Interface](docs/interface.png)
 
@@ -52,8 +55,7 @@ Adicione aqui prints da aplicação ou GIF mostrando o funcionamento.
 ### 📄 Pedido em PDF
 ![PDF](docs/pedidoPDF.png)
 
-### ⚙️ Serviço de Planilha
-![Planilha Service](docs/planilha_service.png)
+
 
 ## ▶️ Como Executar o Projeto
 
