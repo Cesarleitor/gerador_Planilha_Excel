@@ -1,107 +1,101 @@
-# 📊 Gerador de Planilhas Excel
 
-Aplicação desenvolvida em **Python** para geração automática de planilhas Excel a partir de dados inseridos pelo usuário.
+# 📊 Gerador de Planilhas de Pedidos em Python
 
-O projeto tem como objetivo facilitar a criação de planilhas organizadas, automatizando processos manuais e repetitivos no dia a dia.
+## 🚀 Sobre o Projeto
 
----
+Este projeto foi desenvolvido com o objetivo de automatizar a geração de planilhas de pedidos, facilitando o processo operacional no ambiente de trabalho.
 
-## 🚀 Funcionalidades
+A aplicação permite a entrada de dados de forma simples através de uma interface gráfica e gera automaticamente uma planilha Excel padronizada, reduzindo erros manuais e aumentando a produtividade.
 
-* 📄 Geração automática de planilhas `.xlsx`
-* 🧾 Inserção de dados personalizados
-* 📊 Organização em formato tabular (linhas e colunas)
-* 💾 Exportação de arquivos para uso imediato
-* ⚡ Automação de tarefas repetitivas
+## 🎯 Objetivo
 
----
+Resolver um problema real do dia a dia: a criação manual de pedidos, que demandava tempo e estava sujeita a falhas.
 
-## 🛠️ Tecnologias utilizadas
+Com essa solução, o processo se tornou:
 
-* 🐍 Python
-* 🖥️ Interface gráfica Tkinter 
-* 📊 Manipulação de planilhas Excel (ex: openpyxl)
+* Mais rápido ⚡
+* Mais organizado 📂
+* Mais confiável ✅
 
-Projetos desse tipo utilizam bibliotecas Python para criação e manipulação de arquivos `.xlsx`, permitindo automatizar processos e gerar relatórios estruturados de forma eficiente ([GitHub][1]).
+## 💻 Tecnologias Utilizadas
 
----
+* Python
+* Tkinter (interface gráfica)
+* Manipulação de arquivos Excel
 
-## 📂 Estrutura do projeto
+## 🖥️ Funcionalidades
 
-```bash
-gerador_Planilha_Excel/
-├── main.py              # Arquivo principal da aplicação
-├── exports/             # Planilhas geradas automaticamente
-├── pedidos_salvos/      # Dados armazenados (se aplicável)
-└── requirements.txt     # Dependências do projeto
+* Interface gráfica simples e intuitiva
+* Entrada de dados para geração de pedidos
+* Criação automática de planilhas Excel
+* Padronização das informações
+* Redução de tarefas repetitivas
+
+## 📸 Demonstração
+
+Adicione aqui prints da aplicação ou GIF mostrando o funcionamento.
+
+Exemplo:
+
+```
+/docs/tela_principal.png
+/docs/interface.png
+/docs/pedido.png
+/docs/pedidoDonwloads.png
+/docs/pedidoPDF.png
+/docs/planilha_service.png
+
+
 ```
 
----
+## ▶️ Como Executar o Projeto
 
-## ⚙️ Como executar o projeto
+### Pré-requisitos:
 
-### 🔹 Pré-requisitos
+* Python instalado (versão 3.x)
 
-* Python 3 instalado
-
----
-
-### 🔹 Passos
+### Passos:
 
 ```bash
 # Clone o repositório
 git clone https://github.com/Cesarleitor/gerador_Planilha_Excel.git
 
-# Entre na pasta
+# Acesse a pasta do projeto
 cd gerador_Planilha_Excel
 
-# Instale as dependências
+# (Opcional) Criar ambiente virtual
+python -m venv .venv
+
+# Ativar ambiente virtual (Windows)
+.venv\Scripts\activate
+
+# Instalar dependências (se houver)
 pip install -r requirements.txt
 
-# Execute o projeto
-python main.py
+# Executar o projeto
+python interface/tela_principal.py
 ```
 
----
+## 📈 Impacto no Uso Real
 
-## 📌 Saída do sistema
+Este sistema já está sendo utilizado no ambiente de trabalho, trazendo benefícios como:
 
-Após a execução, as planilhas serão geradas automaticamente na pasta:
+* Redução de tempo na geração de pedidos
+* Diminuição de erros manuais
+* Melhor organização das informações
 
-```bash
-/exports
-```
+## 🔄 Melhorias Futuras
 
----
+* Validação de dados mais robusta
+* Melhorias na interface do usuário
+* Integração com banco de dados
+* Geração de relatórios
+* Evolução para versão web
 
-## 💡 Possíveis melhorias
+## 🤝 Contribuição
 
+Sinta-se à vontade para contribuir com melhorias, sugestões ou abrir issues.
 
-* 🌐 Versão web (Flask ou Django)
-* 📊 Templates de planilhas personalizados
-* 📥 Importação de dados via CSV ou banco de dados
-* 📈 Geração de relatórios com gráficos
+## 📌 Autor
 
----
-
-## 🧑‍💻 Autor
-
-Desenvolvido por **Cesar**
-
-* GitHub: https://github.com/Cesarleitor
-
----
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT.
-
----
-
-## ⭐ Sobre o projeto
-
-Este projeto foi criado com foco em produtividade e automação, permitindo gerar planilhas de forma rápida e organizada — algo muito comum em cenários reais de controle de dados, pedidos e relatórios.
-
----
-
-[1]: https://github.com/topics/planilhas?utm_source=chatgpt.com "planilhas · GitHub Topics · GitHub"
+Desenvolvido por Cesar
