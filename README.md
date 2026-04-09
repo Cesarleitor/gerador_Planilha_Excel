@@ -55,6 +55,10 @@ Adicione aqui prints da aplicação ou GIF mostrando o funcionamento.
 ### 📄 Pedido em PDF
 ![PDF](docs/pedidoPDF.png)
 
+## 🎥 Demonstração
+
+![Demonstração do sistema](docs/gif_projeto.gif)
+
 
 
 ## ▶️ Como Executar o Projeto
