@@ -185,8 +185,29 @@ botao_adicionar = ctk.CTkButton(
 botao_adicionar.pack(pady=10)
 
 # Lista de itens
-frame_lista = ctk.CTkFrame(janela)
-frame_lista.pack(padx=20, pady=20, fill="x")
+frame_lista_container = ctk.CTkFrame(janela, fg_color="transparent")
+frame_lista_container.pack(padx=20, pady=20, fill="both", expand=True)
+
+canvas = ctk.CTkCanvas(frame_lista_container)
+canvas.pack(side="left", fill="both", expand=True)
+
+
+scrollbar = ctk.CTkScrollbar(
+    frame_lista_container,
+    orientation="vertical",
+    command=canvas.yview
+)
+scrollbar.pack(side="right", fill="y")
+
+frame_lista = ctk.CTkFrame(canvas)
+
+frame_lista.bind(
+    "<Configure>",
+    lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
+)
+
+canvas.create_window((0, 0), window=frame_lista, anchor="nw")
+canvas.configure(yscrollcommand=scrollbar.set)
 
 cabecalhos = ["Código", "Item", "Quantidade", "Valor unitário", "Total"]
 larguras = [120, 220, 120, 140, 140]
