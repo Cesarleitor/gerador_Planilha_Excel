@@ -47,7 +47,7 @@ Adicione aqui prints da aplicação ou GIF mostrando o funcionamento.
 ![Pedido](docs/pedido.png)
 
 ### 📥 Download do Pedido
-![Download](docs/pedidoDonwloads.png)
+![Download](docs/pedidoDownloads.png)
 
 ### 📄 Pedido em PDF
 ![PDF](docs/pedidoPDF.png)
