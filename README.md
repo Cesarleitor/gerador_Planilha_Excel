@@ -35,18 +35,25 @@ Com essa solução, o processo se tornou:
 
 Adicione aqui prints da aplicação ou GIF mostrando o funcionamento.
 
-Exemplo:
+## 📸 Demonstração do Sistema
 
-```
-/docs/tela_principal.png
-/docs/interface.png
-/docs/pedido.png
-/docs/pedidoDonwloads.png
-/docs/pedidoPDF.png
-/docs/planilha_service.png
+### 🖥️ Tela Principal
+![Tela Principal](docs/tela_principal.png)
 
+### 🧾 Interface do Sistema
+![Interface](docs/interface.png)
 
-```
+### 📦 Geração de Pedido
+![Pedido](docs/pedido.png)
+
+### 📥 Download do Pedido
+![Download](docs/pedidoDonwloads.png)
+
+### 📄 Pedido em PDF
+![PDF](docs/pedidoPDF.png)
+
+### ⚙️ Serviço de Planilha
+![Planilha Service](docs/planilha_service.png)
 
 ## ▶️ Como Executar o Projeto
 
